@@ -1,4 +1,4 @@
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router';
 import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useVerifyEmailMutation, useResendVerificationEmail } from '~/data-provider';
 import { ThemeSelector } from '~/components/ui';

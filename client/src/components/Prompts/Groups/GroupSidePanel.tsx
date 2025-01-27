@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import PanelNavigation from '~/components/Prompts/Groups/PanelNavigation';
 import { useMediaQuery, usePromptGroupsNav } from '~/hooks';
 import List from '~/components/Prompts/Groups/List';
@@ -35,11 +35,11 @@ export default function GroupSidePanel({
       )}
     >
       {children}
-      <div className="flex-grow overflow-y-auto">
+      <div className="grow overflow-y-auto">
         <List
           groups={promptGroups}
           isChatRoute={isChatRoute}
-          isLoading={!!groupsQuery?.isLoading}
+          isLoading={!!groupsQuery.isLoading}
         />
       </div>
       <PanelNavigation

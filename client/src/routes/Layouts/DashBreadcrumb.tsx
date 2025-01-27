@@ -1,6 +1,6 @@
 import { useSetRecoilState } from 'recoil';
 import { useMemo, useCallback } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import { SystemRoles } from 'librechat-data-provider';
 import { ArrowLeft, MessageSquareQuote } from 'lucide-react';
 import {
@@ -58,7 +58,7 @@ export default function DashBreadcrumb() {
     <div className="mr-4 flex h-10 items-center justify-between">
       <Breadcrumb className="mt-1 px-2 dark:text-gray-200">
         <BreadcrumbList>
-          <BreadcrumbItem className="hover:dark:text-white">
+          <BreadcrumbItem className="dark:hover:text-white">
             <BreadcrumbLink
               href="/"
               className="flex flex-row items-center gap-1"
@@ -71,11 +71,11 @@ export default function DashBreadcrumb() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           {/*
-        <BreadcrumbItem className="hover:dark:text-white">
+        <BreadcrumbItem className="dark:hover:text-white">
           <DropdownMenu>
             <DropdownMenuTrigger className="flex cursor-default items-center gap-1">
               <BreadcrumbEllipsis className="h-4 w-4" />
-              <BreadcrumbItem className="hover:dark:text-white">
+              <BreadcrumbItem className="dark:hover:text-white">
                 <span className="text-gray-400">{localize('com_ui_dashboard')}</span>
               </BreadcrumbItem>
               <span className="sr-only">Toggle menu</span>
@@ -89,7 +89,7 @@ export default function DashBreadcrumb() {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         */}
-          <BreadcrumbItem className="hover:dark:text-white">
+          <BreadcrumbItem className="dark:hover:text-white">
             <BreadcrumbLink
               href="/d/prompts"
               className="flex flex-row items-center gap-1"

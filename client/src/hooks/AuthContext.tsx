@@ -8,7 +8,7 @@ import {
   createContext,
 } from 'react';
 import { useRecoilState } from 'recoil';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { setTokenHeader, SystemRoles } from 'librechat-data-provider';
 import { useGetUserQuery, useRefreshTokenMutation } from 'librechat-data-provider/react-query';
 import type { TLoginResponse, TLoginUser } from 'librechat-data-provider';

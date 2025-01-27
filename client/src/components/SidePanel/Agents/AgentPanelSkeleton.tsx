@@ -3,7 +3,7 @@ import { Skeleton } from '~/components/ui';
 
 export default function AgentPanelSkeleton() {
   return (
-    <div className="scrollbar-gutter-stable h-auto w-full flex-shrink-0 overflow-x-hidden">
+    <div className="scrollbar-gutter-stable h-auto w-full shrink-0 overflow-x-hidden">
       {/* Agent Select and Button */}
       <div className="mt-1 flex w-full gap-2">
         <Skeleton className="h-[40px] w-4/5 rounded-lg" />

@@ -1,7 +1,7 @@
 import { memo, useCallback } from 'react';
 import { useRecoilValue } from 'recoil';
 import { useForm } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { useGetMessagesByConvoId } from 'librechat-data-provider/react-query';
 import type { TMessage } from 'librechat-data-provider';
 import type { ChatFormValues } from '~/common';

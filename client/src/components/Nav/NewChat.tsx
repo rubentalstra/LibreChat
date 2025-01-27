@@ -1,6 +1,6 @@
 import { Search } from 'lucide-react';
 import { useRecoilValue } from 'recoil';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { useQueryClient } from '@tanstack/react-query';
 import { QueryKeys, Constants } from 'librechat-data-provider';
 import { useGetEndpointsQuery } from 'librechat-data-provider/react-query';
@@ -35,7 +35,7 @@ const NewChatButtonIcon = ({ conversation }: { conversation: TConversation | nul
   const Icon = icons[iconKey];
 
   return (
-    <div className="h-7 w-7 flex-shrink-0">
+    <div className="h-7 w-7 shrink-0">
       {iconURL && iconURL.includes('http') ? (
         <ConvoIconURL
           iconURL={iconURL}

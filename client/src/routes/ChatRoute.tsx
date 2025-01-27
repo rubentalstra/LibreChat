@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { Constants, EModelEndpoint } from 'librechat-data-provider';
 import {
   useGetModelsQuery,

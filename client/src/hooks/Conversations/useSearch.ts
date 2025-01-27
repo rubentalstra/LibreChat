@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router';
 import { useGetSearchEnabledQuery } from 'librechat-data-provider/react-query';
 import type { UseInfiniteQueryResult } from '@tanstack/react-query';
 import type { ConversationListResponse } from 'librechat-data-provider';

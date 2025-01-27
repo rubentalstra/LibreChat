@@ -3,7 +3,7 @@ import debounce from 'lodash/debounce';
 import { useRecoilValue } from 'recoil';
 import { useForm, FormProvider } from 'react-hook-form';
 import { useEffect, useState, useMemo, useCallback, useRef } from 'react';
-import { useNavigate, useParams, useOutletContext } from 'react-router-dom';
+import { useNavigate, useParams, useOutletContext } from 'react-router';
 import { PermissionTypes, Permissions, SystemRoles } from 'librechat-data-provider';
 import type { TCreatePrompt, TPrompt } from 'librechat-data-provider';
 import {

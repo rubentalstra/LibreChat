@@ -1,4 +1,4 @@
-import reactRouter from 'react-router-dom';
+import reactRouter from 'react-router';
 import userEvent from '@testing-library/user-event';
 import { render, waitFor, screen } from 'test/layout-test-utils';
 import * as mockDataProvider from 'librechat-data-provider/react-query';
@@ -103,8 +103,8 @@ const setup = ({
   };
 };
 
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
+jest.mock('react-router', () => ({
+  ...jest.requireActual('react-router'),
   useOutletContext: () => ({
     startupConfig: mockStartupConfig,
   }),

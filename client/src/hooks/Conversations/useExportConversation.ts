@@ -18,7 +18,7 @@ import type {
 import useBuildMessageTree from '~/hooks/Messages/useBuildMessageTree';
 import { useScreenshot } from '~/hooks/ScreenshotContext';
 import { cleanupPreset, buildTree } from '~/utils';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 
 type ExportValues = {
   fieldName: string;

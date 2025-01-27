@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { TVectorStore } from '~/common';
 import { DotsIcon, TrashIcon } from '~/components/svg';
 import { Button } from '~/components/ui';

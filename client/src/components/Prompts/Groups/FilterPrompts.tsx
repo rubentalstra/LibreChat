@@ -136,7 +136,7 @@ export default function FilterPrompts({
           <Button
             variant="ghost"
             size="sm"
-            className="h-10 w-10 flex-shrink-0"
+            className="h-10 w-10 shrink-0"
             id="filter-prompts"
             aria-label="filter-prompts"
           >

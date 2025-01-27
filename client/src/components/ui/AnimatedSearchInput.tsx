@@ -12,9 +12,9 @@ const AnimatedSearchInput = ({ value, onChange, isSearching: searching, placehol
         <div
           className={`
             absolute inset-0 rounded-lg
-            bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20
+            bg-linear-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20
             transition-all duration-500 ease-in-out
-            ${isSearching ? 'opacity-100 blur-sm' : 'opacity-0 blur-none'}
+            ${isSearching ? 'opacity-100 blur-xs' : 'opacity-0 blur-none'}
           `}
         />
 
@@ -41,10 +41,10 @@ const AnimatedSearchInput = ({ value, onChange, isSearching: searching, placehol
               w-full rounded-lg px-10 py-2
               transition-all duration-500 ease-in-out
               placeholder:text-gray-400
-              focus:outline-none focus:ring-0
+              focus:outline-hidden focus:ring-0
               ${isFocused ? 'bg-white/10' : 'bg-white/5'}
               ${isSearching ? 'bg-white/15' : ''}
-              backdrop-blur-sm
+              backdrop-blur-xs
             `}
           />
 
@@ -82,7 +82,7 @@ const AnimatedSearchInput = ({ value, onChange, isSearching: searching, placehol
           />
           <div
             className={`
-              absolute inset-0 bg-gradient-to-r from-purple-500/5 via-blue-500/5 to-purple-500/5
+              absolute inset-0 bg-linear-to-r from-purple-500/5 via-blue-500/5 to-purple-500/5
               blur-xl transition-all duration-700 ease-in-out
               ${isSearching ? 'animate-gradient-x opacity-100' : 'opacity-0'}
             `}
@@ -93,7 +93,7 @@ const AnimatedSearchInput = ({ value, onChange, isSearching: searching, placehol
       {/* Focus state background glow */}
       <div
         className={`
-          absolute inset-0 -z-20 bg-gradient-to-r from-blue-500/10
+          absolute inset-0 -z-20 bg-linear-to-r from-blue-500/10
           via-purple-500/10 to-blue-500/10 blur-xl
           transition-all duration-500 ease-in-out
           ${isFocused ? 'scale-105 opacity-100' : 'scale-100 opacity-0'}

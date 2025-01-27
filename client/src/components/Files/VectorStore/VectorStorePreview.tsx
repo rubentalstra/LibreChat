@@ -6,7 +6,7 @@ import { TFile } from 'librechat-data-provider/dist/types';
 import UploadFileButton from '../FileList/UploadFileButton';
 import UploadFileModal from '../FileList/UploadFileModal';
 import { BarChart4Icon, Clock3, FileClock, FileIcon, InfoIcon, PlusIcon } from 'lucide-react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 
 const tempVectorStore = {
   _id: 'vs_NeHK4JidLKJ2qo23dKLLK',
@@ -178,7 +178,7 @@ export default function VectorStorePreview() {
             <Clock3 className="text-base text-gray-500 md:text-lg lg:text-xl" />
             &nbsp;Created At
           </span>
-          <span className="w-1/2 text-gray-500 md:w-3/5">{vectorStore.createdAt?.toString()}</span>
+          <span className="w-1/2 text-gray-500 md:w-3/5">{vectorStore.createdAt.toString()}</span>
         </div>
       </div>
 

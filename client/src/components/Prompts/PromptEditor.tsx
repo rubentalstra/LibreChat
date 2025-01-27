@@ -95,7 +95,7 @@ const PromptEditor: React.FC<Props> = ({ name, isEditing, setIsEditing }) => {
             isEditing ? (
               <TextareaAutosize
                 {...field}
-                className="w-full rounded border border-border-medium bg-transparent px-2 py-1 text-text-primary focus:outline-none"
+                className="w-full rounded border border-border-medium bg-transparent px-2 py-1 text-text-primary focus:outline-hidden"
                 minRows={3}
                 onBlur={() => setIsEditing(false)}
                 onKeyDown={(e) => {

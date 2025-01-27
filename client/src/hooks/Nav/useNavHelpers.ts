@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import type { Location } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router';
+import type { Location } from 'react-router';
 
 export function useCustomLink<T = HTMLAnchorElement>(
   route: string,

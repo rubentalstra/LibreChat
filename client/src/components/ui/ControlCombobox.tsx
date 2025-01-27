@@ -66,7 +66,7 @@ function ControlCombobox({
         className={cn(
           'flex cursor-pointer items-center px-3 text-sm',
           'text-text-primary hover:bg-surface-tertiary',
-          'data-[active-item]:bg-surface-tertiary',
+          'data-active-item:bg-surface-tertiary',
         )}
         render={<Ariakit.ComboboxItem />}
         style={style}
@@ -76,7 +76,7 @@ function ControlCombobox({
             {item.icon}
           </div>
         )}
-        <span className="flex-grow truncate text-left">{item.label}</span>
+        <span className="grow truncate text-left">{item.label}</span>
       </Ariakit.SelectItem>
     );
   };
@@ -108,7 +108,7 @@ function ControlCombobox({
               </div>
             )}
             {!isCollapsed && (
-              <span className="flex-grow truncate text-left">
+              <span className="grow truncate text-left">
                 {displayValue ?? selectPlaceholder}
               </span>
             )}
@@ -125,7 +125,7 @@ function ControlCombobox({
                 <Ariakit.Combobox
                   autoSelect
                   placeholder={searchPlaceholder}
-                  className="w-full rounded-md border border-border-light bg-surface-tertiary py-2 pl-9 pr-3 text-sm text-text-primary focus:outline-none"
+                  className="w-full rounded-md border border-border-light bg-surface-tertiary py-2 pl-9 pr-3 text-sm text-text-primary focus:outline-hidden"
                 />
               </div>
             </div>

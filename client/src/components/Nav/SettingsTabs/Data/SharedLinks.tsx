@@ -1,5 +1,5 @@
 import { useCallback, useState, useMemo, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import debounce from 'lodash/debounce';
 import { TrashIcon, MessageSquare, ArrowUpDown } from 'lucide-react';
 import type { SharedLinkItem, SharedLinksListParams } from 'librechat-data-provider';
@@ -175,7 +175,7 @@ export default function SharedLinks() {
           return (
             <div className="flex items-center gap-2">
               <Link
-                to={`/share/${shareId}`}
+                to={`../share/${shareId}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block truncate text-blue-500 hover:underline"

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { Outlet, useNavigate, useLocation } from 'react-router';
 import { useGetStartupConfig } from 'librechat-data-provider/react-query';
 import type { TStartupConfig } from 'librechat-data-provider';
 import AuthLayout from '~/components/Auth/AuthLayout';

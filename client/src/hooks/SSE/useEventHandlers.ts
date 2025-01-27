@@ -1,7 +1,7 @@
 import { v4 } from 'uuid';
 import { useCallback, useRef } from 'react';
 import { useSetRecoilState } from 'recoil';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { useQueryClient } from '@tanstack/react-query';
 import {
   QueryKeys,

@@ -175,7 +175,7 @@ export default function AgentSelect({
       showLabel={false}
       emptyTitle={true}
       showOptionIcon={true}
-      containerClassName="flex-grow"
+      containerClassName="grow"
       searchClassName="dark:from-gray-850"
       searchPlaceholder={localize('com_agents_search_name')}
       optionsClass="hover:bg-gray-20/50 dark:border-gray-700"

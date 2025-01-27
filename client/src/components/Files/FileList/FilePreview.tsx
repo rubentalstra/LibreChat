@@ -6,7 +6,7 @@ import { Button } from '~/components/ui';
 import DeleteIconButton from '../DeleteIconButton';
 import VectorStoreButton from '../VectorStore/VectorStoreButton';
 import { CircleIcon, Clock3Icon, InfoIcon } from 'lucide-react';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 
 const tempFile: TFile = {
   filename: 'File1.jpg',

@@ -39,7 +39,7 @@ export default function ToolPopover({
             </div>
             <div className="bg-token-surface-secondary text-token-text-primary dark rounded-md text-xs">
               <div className="max-h-32 overflow-y-auto rounded-md p-2 dark:bg-gray-700">
-                <code className="!whitespace-pre-wrap ">{formatText(input)}</code>
+                <code className="whitespace-pre-wrap! ">{formatText(input)}</code>
               </div>
             </div>
             {output != null && output && (
@@ -49,7 +49,7 @@ export default function ToolPopover({
                 </div>
                 <div className="bg-token-surface-secondary text-token-text-primary dark rounded-md text-xs">
                   <div className="max-h-32 overflow-y-auto rounded-md p-2 dark:bg-gray-700">
-                    <code className="!whitespace-pre-wrap ">{formatText(output)}</code>
+                    <code className="whitespace-pre-wrap! ">{formatText(output)}</code>
                   </div>
                 </div>
               </>
